@@ -37,6 +37,7 @@ python LoRA_pretrain.py \
     --logging_steps 1000 \
     --save_steps 1000
 ```
+*If you are training with our dataset, you can insert {input.csv} as './Data/Human/Pre-train/train.csv'
 
 ## 3. Fine-Tuning (You can skip if you are using our model)
 ```
@@ -53,3 +54,4 @@ python LoRA_finetune.py \
     --weight_decay 0.001 \
     --warmup_step 500
 ```
+*If you are training with our dataset and pre-trained model, you can insert {input.csv} as './Data/Human/Fine_tune/finetune.csv' and {trained_model_path} as './pretrained_bert/Human_pre_model'
