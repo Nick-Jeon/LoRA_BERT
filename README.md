@@ -28,7 +28,7 @@ python LoRA_input.py --lncRNA {lncRNA.fasta file} --PC {Protein-Coding.fasta fil
 ```
 python LoRA_pretrain.py \
     --input {input.csv} \
-    --vacab 100 \
+    --vocab 100 \
     --maxlength 1536 \
     --epochs 10 \
     --per_train_batch 8 \
