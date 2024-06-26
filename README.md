@@ -62,3 +62,8 @@ python LoRA_finetune.py \
     --warmup_step 500
 ```
 *If you are training with our dataset and pre-trained model, you can insert {input.csv} as './Data/Human/Fine_tune/finetune.csv' and {trained_model_path} as './pretrained_bert/Human_pre_model'
+
+##4. Inference
+
+###4.1 Full Sequence Inference
+
