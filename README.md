@@ -19,6 +19,7 @@ For example) If you have 500 samples, your training data will around 1,000 sampl
 500 seqs(raw sequence -> 3-mer representation) + 500 seqs(raw sequences -> Longest ORF -> 3-mer representation) - number of seqs ess than 100nts
 
 To generate 'example1.csv':
+
 '''
 python LoRA_input.py --lncRNA {lncRNA.fasta file} --PC {Protein-Coding.fasta file} --output example1.csv
 '''
