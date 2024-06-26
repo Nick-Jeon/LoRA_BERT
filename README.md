@@ -12,6 +12,16 @@ Make sure to download the following and copy/paste it into the LoRA_BERT directo
 
 [LoRA-BERT](https://drive.google.com/file/d/1cRllgQu3G3qQagj3sLzsa2uOxMWgegS4/view?usp=sharing)
 
+Please, install all the following packages:
+* datasets
+* sklearn
+* torch
+* transformers
+* Biopython
+* evaluate
+* pandas
+* numpy 
+
 
 ## 1. Data Processing
 Please see the template data at `example1.csv`. 
