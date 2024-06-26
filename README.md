@@ -6,7 +6,7 @@ This repository includes several resources: the source code for the LoRA-BERT mo
 ## Required Packages
 Ensure that you have at least one NVIDIA GPU available. We conducted our training using an NVIDIA A100 GPU with 40GB of graphics memory, and the batch size is optimized for this setup. If your GPU has different specifications or memory capacity, you may need to adjust the batch size to suit your hardware.
 
-Make sure to download the following and copy/paste it into the LoRA_BERT directory:
+* Make sure to download the following and copy/paste it into the LoRA_BERT directory:
 
 [Datasets](https://drive.google.com/file/d/1bOwe_5-6e0KPkJpKDHdZ1kv1x5NsLIQ9/view?usp=sharing)
 
