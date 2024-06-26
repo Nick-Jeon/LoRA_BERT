@@ -20,6 +20,6 @@ For example) If you have 500 samples, your training data will around 1,000 sampl
 
 To generate 'example1.csv':
 
-'''
+```
 python LoRA_input.py --lncRNA {lncRNA.fasta file} --PC {Protein-Coding.fasta file} --output example1.csv
-'''
+```
