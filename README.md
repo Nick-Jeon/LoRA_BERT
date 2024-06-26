@@ -50,6 +50,6 @@ python LoRA_finetune.py \
     --per_eval_batch 8 \
     --logging_steps 1000 \
     --save_steps 1000 \
-    --weigth_decay 0.001 \
-    --warup_step 500
+    --weight_decay 0.001 \
+    --warmup_step 500
 ```
