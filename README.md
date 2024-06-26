@@ -1,4 +1,4 @@
-# LoRA_BERT (Natural Language Processing Model for Robust and Accurate Prediction of Long non-coding RNAs)
+# LoRA-BERT (Natural Language Processing Model for Robust and Accurate Prediction of Long non-coding RNAs)
 We introduce a novel pre-trained bidirectional encoder representation called LoRA-BERT. LoRA-BERT is designed to capture the importance of nucleotide-level information during sequence classification, leading to more robust and satisfactory outcomes.
 
 This repository includes several resources: the source code for the LoRA-BERT model, example usages, pre-trained models, fine-tuned models, and etc. We are still actively developing the package and will add more features gradually. 
