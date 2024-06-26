@@ -15,4 +15,5 @@ During the process, we removed any sequence less than 100 nts.
 Also, the training samples will be around doubled what you have originally collected.   
 
 For example) If you have 500 samples, your training data will around 1,000 samples.
+
 500 seqs(raw sequence -> 3-mer representation) + 500 seqs(raw sequences -> Longest ORF -> 3-mer representation) - number of seqs ess than 100nts
