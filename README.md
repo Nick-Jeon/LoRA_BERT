@@ -8,7 +8,7 @@ Ensure that you have at least one NVIDIA GPU available. We conducted our trainin
 
 Make sure to download the following and copy/paste it into the LoRA_BERT directory:
 
-[Data](https://drive.google.com/file/d/1Hj1LPnP6Kpco2ctFp-_MVhWsy66-A4Nt/view?usp=sharing)
+[Datasets](https://drive.google.com/file/d/1Hj1LPnP6Kpco2ctFp-_MVhWsy66-A4Nt/view?usp=sharing)
 
 [LoRA-BERT](https://drive.google.com/file/d/1cRllgQu3G3qQagj3sLzsa2uOxMWgegS4/view?usp=sharing)
 
