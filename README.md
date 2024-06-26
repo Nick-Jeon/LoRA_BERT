@@ -26,5 +26,14 @@ python LoRA_input.py --lncRNA {lncRNA.fasta file} --PC {Protein-Coding.fasta fil
 
 ## 2. Pre-Training (You can skip if you are using our model)
 ```
-python LoRA_pretrain.py --input {input.csv} --vacab 100 --maxlength 1536 --epochs 10 --per_train_batch 8 --gradient_accumulation_step 8 --per_eval_batch 8 --logging_steps 1000 --save_steps 1000
+python LoRA_pretrain.py \
+    --input {input.csv} \
+    --vacab 100 \
+    --maxlength 1536 \
+    --epochs 10 \
+    --per_train_batch 8 \
+    --gradient_accumulation_step 8 \
+    --per_eval_batch 8 \
+    --logging_steps 1000 \
+    --save_steps 1000
 ```
