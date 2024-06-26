@@ -1,4 +1,13 @@
 # LoRA_BERT
-This repository includes the implementation of 'DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome'. Please cite our paper if you use the models or codes. The repo is still actively under development, so please kindly report if there is any issue encountered.
+we introduce a novel pre-trained bidirectional encoder representation called LoRA-BERT. LoRA-BERT is designed to capture the importance of nucleotide-level information during sequence classification, leading to more robust and satisfactory outcomes.
 
- In this package, we provides resources including: source codes of the DNABERT model, usage examples, pre-trained models, fine-tuned models and visulization tool. This package is still under development, as more features will be included gradually. Training of DNABERT consists of general-purposed pre-training and task-specific fine-tuning. As a contribution of our project, we released the pre-trained models in this repository. We extended codes from [huggingface](https://github.com/huggingface/transformers) and adapted them to the DNA scenario.
+This repository includes several resources: the source code for the LoRA-BERT model, example usages, pre-trained models, fine-tuned models, and etc. We are still actively developing the package and will add more features gradually. 
+
+## Required Packages
+Ensure that you have at least one NVIDIA GPU available. We conducted our training using an NVIDIA A100 GPU with 40GB of graphics memory, and the batch size is optimized for this setup. If your GPU has different specifications or memory capacity, you may need to adjust the batch size to suit your hardware.
+
+## Data Processing
+Please see the template data at `example.csv`. If you are trying to pre-train/fine-tune LoRA-BERT with your own data, please process your data into the same format as it. Note that the sequences are in k-mer representation, so you will need to convert your sequences into that. During the process, we removed any sequence less than 100 nts.
+Also, the training samples will be around doubled what you have originally collected.   
+For example) If you have 500 samples, your training data will around 1,000 samples.
+500 seqs(raw sequence -> 3-mer representation) + 500 seqs(raw sequences -> Longest ORF -> 3-mer representation) - number of seqs ess than 100nts
