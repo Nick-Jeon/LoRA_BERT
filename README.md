@@ -66,13 +66,13 @@ python LoRA_finetune.py \
 ## 4. Inference
 
 ### 4.1 Full Sequence Inference
-The result CSV file will be generated in the results folder.
+The result CSV file will be saveed in the results folder.
 ```
 python LoRA_test_full.py --input {input.fasta} --model_path {fine_tuned_model_path} --maxlength 1536
 ```
 
 ### 4.2 Partial Sequence Inference
-The result CSV file will be generated in the results folder.
+The result CSV file will be saveed in the results folder.
 ```
 python LoRA_test_partial.py --input {input.fasta} --model_path {fine_tuned_model_path} --maxlength 1536
 ```
