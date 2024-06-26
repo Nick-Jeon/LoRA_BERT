@@ -37,3 +37,19 @@ python LoRA_pretrain.py \
     --logging_steps 1000 \
     --save_steps 1000
 ```
+
+## 3. Fine-Tuning (You can skip if you are using our model)
+```
+python LoRA_finetune.py \
+    --input {input.csv} \
+    --model_path {trained_model_path} \
+    --maxlength 1536 \
+    --epochs 10 \
+    --per_train_batch 8 \
+    --gradient_accumulation_step 8 \
+    --per_eval_batch 8 \
+    --logging_steps 1000 \
+    --save_steps 1000 \
+    --weigth_decay 0.001 \
+    --warup_step 500
+```
