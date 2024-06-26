@@ -76,4 +76,4 @@ The result CSV file will be generated in the results folder.
 ```
 python LoRA_test_partial.py --input {input.fasta} --model_path {fine_tuned_model_path} --maxlength 1536
 ```
-* If the sequence doesn't have a start codon('ATG'), it will be removed from the dataset and inference on the remaining sequences.
+*If the sequence doesn't have a start codon('ATG'), it will be removed from the dataset and inference on the remaining sequences.
