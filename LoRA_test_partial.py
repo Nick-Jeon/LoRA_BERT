@@ -11,6 +11,7 @@ import pickle
 from argparse import ArgumentParser
 import pandas as pd
 from Bio import SeqIO
+import os 
 
 # Orf Finder Code
 # Four nucleotides of DNA
@@ -247,7 +248,9 @@ def main():
             # executing argmax function to get the candidate label
             #candidate = torch.argmax(probs, dim=1)
             total_pre = total_pre + pre1D
-    
+
+    os.makedirs("results", exist_ok=True)
+
     df_result = pd.DataFrame({'ID': A_id, 'Prediction':total_pre})
     df_result.to_csv('./results/test_result.csv')
     
