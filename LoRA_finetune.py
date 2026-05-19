@@ -70,8 +70,8 @@ def main():
 
 	# tokenize the dataset, truncate when passed `max_length`, 
 	# and pad with 0's when less than `max_length`
-	train_encodings = tokenizer(d["train"]["text"], truncation=True, padding=True, max_length=max_length)
-	valid_encodings = tokenizer(d["test"]["text"], truncation=True, padding=True, max_length=max_length)
+	train_encodings = tokenizer(list(d["train"]["text"]), truncation=True, padding=True, max_length=max_length)
+	valid_encodings = tokenizer(list(d["test"]["text"]), truncation=True, padding=True, max_length=max_length)
 
 	class NewsGroupsDataset(torch.utils.data.Dataset):
 	    def __init__(self, encodings, labels):
